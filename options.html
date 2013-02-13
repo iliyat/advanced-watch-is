@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Advanced Watch.is | настройки</title>
+			<link rel="stylesheet" href="styles/style.css">
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/options.js"></script>
+		</head>
+		<body>
+			<div class="nav-bar">
+				<h2 class="nav-header">Настройки</h2>
+				<ul class="navigation">
+					<li class="nav-item" data="auth">Авторизация</li>
+					<li class="nav-item nav-item-selected" data="visual">Визуальные настройки</li>
+					<li class="nav-item" data="content-script">Настройки кнопки</li>
+					<li class="nav-item" data="about">О расширении</li>
+				</ul>
+			</div>
+			<div class="main-area">
+				<div id="auth" class="page">
+					<h2 class="nav-header">Авторизация</h2>
+					<ul>
+						<li>
+							На данный момент авторизацию нужно выполнять на сайте.
+						</li>
+					</ul>
+						
+				</div>
+				<div id="visual" class="page">
+					<h2 class="nav-header">Визуальные</h2>
+					<ul>
+						<li>
+						<fieldset><legend>Позиция всплывающей информации:</legend>
+							<select id="popup-position">
+								<option value="bottom">Снизу</option>
+								<option value="side">Сбоку</option>
+							</select>
+						</fieldset>
+						</li>
+						<li>
+							<fieldset><legend>Прозрачность фона:</legend>
+								<input id="opacity" type="range" value="0.9" min="0" max="1" step="0.1"><input id="visual-range" type="text" size=2 disabled>
+							</fieldset>
+						<li>
+							Настройки времени появления (<small>в следующей версии</small>)
+						</li>
+					</ul>
+				</div>
+				<div id="content-script" class="page">
+					<h2 class="nav-header">Кнопка</h2>
+					<ul>
+						<li>
+							<fieldset><legend>Информация на значке:</legend>
+								Отображать 
+								<select id="on-badge-info">
+									<option value="rating">Рейтинг</option>
+									<option value="messages">Личные сообщения</option>
+								</select>
+							</fieldset>
+						</li>
+						<!-- <li>
+							?? поиск в попапе расширения
+						</li> -->
+					</ul>
+				</div>
+				<div id="about" class="page">
+					<h2 class="nav-header">About</h2>
+					<ul>
+						<li>
+							<fieldset>
+								<legend>Информация</legend>
+								Расширение улучшает стандартный функционал сайта Watch.is<br>
+								<a href="http://iliyat.ru/works/rasshirenie-advanced-watch-is-dlya-google-chrome/">Страница проекта</a>, <a href="#">страница на GitHub</a>
+							</fieldset>
+						</li>
+						<li>
+							<fieldset>
+								<legend>Changelog</legend>
+								<b>v.0.3.7</b><br>
+								- Изменения в странице настроек.
+								- 
+								<br><br>
+								<b>v.0.3.6</b><br>
+								- Снова исправлено поведение кнопки.
+								<br><br>
+								<b>v.0.3.5</b>v.0.3.5<br>
+								- Исправлено поведение кнопки, если пользователь не авторизован.
+								<br><br>
+								<b>v.0.3.4</b><br>
+								- Тестовая версия, запуск в Google Chrome Store
+							</fieldset>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</body>
+	</html>

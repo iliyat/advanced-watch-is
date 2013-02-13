@@ -1,0 +1,109 @@
+body	
+	{
+		font-family: Helvetica, sans-serif;
+		margin: 0px;
+		font-size: 13px;
+		color: #333;
+	}
+
+input, select
+	{
+		vertical-align: middle;
+		-webkit-border-radius: 3px;
+		border: 1px solid #AAA
+	}
+.main-area
+	{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin-left: 220px;
+	}
+.main-area .page
+	{
+		display: none;
+	}
+.page ul
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+.page li
+	{
+		display: inline-block;
+		list-style: none;
+		border-top: 1px solid #AAA;
+		margin: 10px;
+		padding: 10px;
+		width: 70%;
+	}
+.page > section
+	{
+		-webkit-box-orient: horizontal;
+	}
+.page fieldset
+	{
+		margin-left: 160px;
+		border: 0px;
+		
+		vertical-align: top;
+	}
+.page fieldset legend
+	{
+		position: absolute;
+		width: 150px;
+		margin-left: -170px;
+		font-weight: bold;
+	}
+h4
+	{
+		margin: 10px;
+	}
+
+.nav-bar
+	{
+		position: fixed;
+		background-color: rgb(43, 38, 38);
+		top: 0;
+		bottom: 0;
+		width: 220px;
+		height: 100%;
+		text-align: right;
+		-webkit-border-end: 1px solid #c6c9ce;
+		color: #fff;
+	}
+.nav-header
+	{
+		font-weight: normal;
+		font-size: 200%;
+		padding: 20px;
+		margin: 0px;
+	}
+.nav-bar .nav-header
+	{
+		color: #fff;
+	}
+.navigation
+	{
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+
+.navigation li	
+	{
+		width: auto;
+		padding: 10px;
+		padding-right: 20px;
+		cursor: pointer;
+	}
+
+.nav-item-selected
+	{
+		-webkit-box-shadow: 0 1px 0 #000;
+		background-color: rgb(226, 180, 97);
+		border-top: 1px solid rgb(151, 114, 17);
+		color: black;
+	}
