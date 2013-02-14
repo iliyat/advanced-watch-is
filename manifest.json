@@ -1,6 +1,6 @@
 {
   "name": "Advanced Watch.is",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "manifest_version": 2,
   "description": "Расширение добавляет функционал для сайта watch.is",
   "options_page": "options.html",
